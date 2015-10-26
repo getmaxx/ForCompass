@@ -28,8 +28,8 @@ static const int kNumberOfBars = 100; // количество вьюх
     CGFloat offset = 0.0f;
     for (int i = 0; i < kNumberOfBars; i++) {
         //создаем и настраиваем вью
-        UIView* bar = [[UIView alloc] initWithFrame:CGRectMake(centerPoint.x + kRadius * cos(offset),
-                                                               centerPoint.y + kRadius * sin(offset),
+        UIView* bar = [[UIView alloc] initWithFrame:CGRectMake(centerPoint.x + kRadius * cos(offset) - 15 / 2,
+                                                               centerPoint.y + kRadius * sin(offset) - 1.5 / 2,
                                                                15,
                                                                1.5)];
         bar.backgroundColor = [UIColor lightGrayColor];
